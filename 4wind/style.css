@@ -1,0 +1,684 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+canvas {
+  display: block;
+}
+
+.brainlady img{
+  position:absolute;
+  max-width: 14%;
+  left:1300px;
+  z-index:300;
+}
+
+.audio{
+  position: absolute;
+  left:50px;
+  top:150px;
+  opacity: 0%;
+  z-index:600;
+}
+
+.angrycloud{
+  position: absolute;
+  left:30px;
+  top:145px;
+  z-index:500;
+}
+
+.kirbs img{
+  width: 100px;
+  position:absolute;
+  top:585px;
+  /* https://stackoverflow.com/questions/19963403/how-to-make-image-move-to-the-right-of-the-screen-and-back-using-javascript */
+  -webkit-animation: Drive 10s linear infinite;
+  -moz-animation: Drive 10s linear infinite;
+  -ms-animation: Drive 10s linear infinite;
+  -o-animation: Drive 10s linear infinite;
+}
+
+@-webkit-keyframes Drive {
+  from {
+      left: -300px;
+  }
+  50% {
+      left: 100%;
+  }
+  to { 
+      left: -300px;
+  }
+}
+
+/* neutral dots*/
+.dot1{
+  /* https://www.w3schools.com/howto/howto_css_circles.asp */
+  /* position:absolute;
+  left:1420px;
+  top:55px;
+  height: 30px;
+  width: 30px;
+  background-color: #ff56da;
+  border-radius: 50%;
+  display: inline-block;
+  filter: blur(4px);
+  animation: fade-inout .75s infinite alternate;
+  z-index: 500; */
+}
+
+.dot11{
+  /* https://www.w3schools.com/howto/howto_css_circles.asp */
+  /* position:absolute;
+  left:1430px;
+  top:60px;
+  height: 35px;
+  width: 35px;
+  background-color: #ff56da;
+  border-radius: 50%;
+  display: inline-block;
+  filter: blur(4px);
+  animation: fade-inout .75s infinite alternate;
+  z-index: 500; */
+}
+
+.dot2{
+  /* https://www.w3schools.com/howto/howto_css_circles.asp */
+  /* position:absolute;
+  left:1400px;
+  top:40px;
+  height: 15px;
+  width: 15px;
+  background-color: #ff56da;
+  border-radius: 50%;
+  display: inline-block;
+  filter: blur(4px);
+  animation: fade-inout .75s infinite alternate;
+  z-index: 500; */
+}
+
+.dot3{
+  /* https://www.w3schools.com/howto/howto_css_circles.asp */
+  /* position:absolute;
+  left:1380px;
+  top:50px;
+  height: 12px;
+  width: 12px;
+  background-color: #ff56da;
+  border-radius: 50%;
+  display: inline-block;
+  filter: blur(4px);
+  animation: fade-inout .75s infinite alternate;
+  z-index: 500; */
+}
+
+
+/*fear dots*/
+
+.dot4{
+  /* https://www.w3schools.com/howto/howto_css_circles.asp */
+  position:absolute;
+  left:1370px;
+  top:58px;
+  height: 17px;
+  width: 15px;
+  background-color: #10ff1c;
+  border-radius: 50%;
+  display: inline-block;
+  filter: blur(4px);
+  animation: fade-inout .85s infinite alternate;
+  z-index: 500;
+}
+
+.dot5{
+  /* https://www.w3schools.com/howto/howto_css_circles.asp */
+  position:absolute;
+  left:1400px;
+  top:50px;
+  height: 19px;
+  width: 15px;
+  background-color: #10ff1c;
+  border-radius: 50%;
+  display: inline-block;
+  filter: blur(4px);
+  animation: fade-inout .85s infinite alternate;
+  z-index: 500;
+}
+
+.dot6{
+  /* https://www.w3schools.com/howto/howto_css_circles.asp */
+  position:absolute;
+  left:1430px;
+  top:40px;
+  height: 22px;
+  width: 20px;
+  background-color: #10ff1c;
+  border-radius: 50%;
+  display: inline-block;
+  filter: blur(4px);
+  animation: fade-inout .85s infinite alternate;
+  z-index: 500;
+}
+
+.dot7{
+  /* https://www.w3schools.com/howto/howto_css_circles.asp */
+  position:absolute;
+  left:1445px;
+  top:65px;
+  height: 14px;
+  width: 12px;
+  background-color: #10ff1c;
+  border-radius: 50%;
+  display: inline-block;
+  filter: blur(4px);
+  animation: fade-inout .85s infinite alternate;
+  z-index: 500;
+}
+
+.dot8{
+  /* https://www.w3schools.com/howto/howto_css_circles.asp */
+  position:absolute;
+  left:1426px;
+  top:84px;
+  height: 12px;
+  width: 12px;
+  background-color: #10ff1c;
+  border-radius: 50%;
+  display: inline-block;
+  filter: blur(4px);
+  animation: fade-inout .85s infinite alternate;
+  z-index: 500;
+}
+
+/*anger dots*/
+
+.dot9{
+  /* https://www.w3schools.com/howto/howto_css_circles.asp */
+  position:absolute;
+  left:1386px;
+  top:37px;
+  height: 18px;
+  width: 15px;
+  background-color: #ff1e1e;
+  border-radius: 50%;
+  display: inline-block;
+  filter: blur(4px);
+  animation: fade-inout .65s infinite alternate;
+  z-index: 500;
+}
+
+.dot10{
+  /* https://www.w3schools.com/howto/howto_css_circles.asp */
+  position:absolute;
+  left:1367px;
+  top:45px;
+  height: 13px;
+  width: 10px;
+  background-color: #ff1e1e;
+  border-radius: 50%;
+  display: inline-block;
+  filter: blur(4px);
+  animation: fade-inout .65s infinite alternate;
+  z-index: 500;
+}
+
+.dot11{
+  /* https://www.w3schools.com/howto/howto_css_circles.asp */
+  position:absolute;
+  left:1438px;
+  top:48px;
+  height: 22px;
+  width: 20px;
+  background-color: #ff1e1e;
+  border-radius: 50%;
+  display: inline-block;
+  filter: blur(4px);
+  animation: fade-inout .65s infinite alternate;
+  z-index: 500;
+}
+
+.dot12{
+  /* https://www.w3schools.com/howto/howto_css_circles.asp */
+  position:absolute;
+  left:1449px;
+  top:55px;
+  height: 14px;
+  width: 10px;
+  background-color: #ff1e1e;
+  border-radius: 50%;
+  display: inline-block;
+  filter: blur(4px);
+  animation: fade-inout .65s infinite alternate;
+  z-index: 500;
+}
+
+.dot13{
+  /* https://www.w3schools.com/howto/howto_css_circles.asp */
+  position:absolute;
+  left:1426px;
+  top:84px;
+  height: 12px;
+  width: 12px;
+  background-color: #ff1e1e;
+  border-radius: 50%;
+  display: inline-block;
+  filter: blur(4px);
+  animation: fade-inout .65s infinite alternate;
+  z-index: 500;
+}
+
+.dot14{
+  /* https://www.w3schools.com/howto/howto_css_circles.asp */
+  position:absolute;
+  left:1426px;
+  top:84px;
+  height: 12px;
+  width: 12px;
+  background-color: #ff1e1e;
+  border-radius: 50%;
+  display: inline-block;
+  filter: blur(4px);
+  animation: fade-inout .65s infinite alternate;
+  z-index: 500;
+}
+
+
+/*sad dots*/
+
+.dot15{
+  /* https://www.w3schools.com/howto/howto_css_circles.asp */
+  position:absolute;
+  left:1460px;
+  top:79px;
+  height: 21px;
+  width: 19px;
+  background-color: #74a0ff;
+  border-radius: 50%;
+  display: inline-block;
+  filter: blur(4px);
+  animation: fade-inout .45s infinite alternate;
+  z-index: 500;
+}
+
+.dot16{
+  /* https://www.w3schools.com/howto/howto_css_circles.asp */
+  position:absolute;
+  left:1460px;
+  top:63px;
+  height: 12px;
+  width: 12px;
+  background-color: #74a0ff;
+  border-radius: 50%;
+  display: inline-block;
+  filter: blur(4px);
+  animation: fade-inout .45s infinite alternate;
+  z-index: 500;
+}
+
+.dot17{
+  /* https://www.w3schools.com/howto/howto_css_circles.asp */
+  position:absolute;
+  left:1443px;
+  top:90px;
+  height: 16px;
+  width: 12px;
+  background-color: #74a0ff;
+  border-radius: 50%;
+  display: inline-block;
+  filter: blur(4px);
+  animation: fade-inout .45s infinite alternate;
+  z-index: 500;
+}
+
+/*suprised dots*/
+
+.dot18{
+  /* https://www.w3schools.com/howto/howto_css_circles.asp */
+  position:absolute;
+  left:1466px;
+  top:66px;
+  height: 17px;
+  width: 15px;
+  background-color: #fffb25;
+  border-radius: 50%;
+  display: inline-block;
+  filter: blur(4px);
+  animation: fade-inout .50s infinite alternate;
+  z-index: 500;
+}
+
+.dot19{
+  /* https://www.w3schools.com/howto/howto_css_circles.asp */
+  position:absolute;
+  left:1446px;
+  top:63px;
+  height: 15px;
+  width: 15px;
+  background-color: #fffb25;
+  border-radius: 50%;
+  display: inline-block;
+  filter: blur(4px);
+  animation: fade-inout .50s infinite alternate;
+  z-index: 500;
+}
+
+.dot20{
+  /* https://www.w3schools.com/howto/howto_css_circles.asp */
+  position:absolute;
+  left:1416px;
+  top:59px;
+  height: 20px;
+  width: 14px;
+  background-color: #fffb25;
+  border-radius: 50%;
+  display: inline-block;
+  filter: blur(4px);
+  animation: fade-inout .5s infinite alternate;
+  z-index: 500;
+}
+
+.dot21{
+  /* https://www.w3schools.com/howto/howto_css_circles.asp */
+  position:absolute;
+  left:1423px;
+  top:44px;
+  height: 16px;
+  width: 16px;
+  background-color: #fffb25;
+  border-radius: 50%;
+  display: inline-block;
+  filter: blur(4px);
+  animation: fade-inout .5s infinite alternate;
+  z-index: 500;
+}
+
+.dot22{
+  /* https://www.w3schools.com/howto/howto_css_circles.asp */
+  position:absolute;
+  left:1416px;
+  top:48px;
+  height: 13px;
+  width: 14px;
+  background-color: #fffb25;
+  border-radius: 50%;
+  display: inline-block;
+  filter: blur(4px);
+  animation: fade-inout .5s infinite alternate;
+  z-index: 500;
+}
+
+.dot23{
+  /* https://www.w3schools.com/howto/howto_css_circles.asp */
+  position:absolute;
+  left:1386px;
+  top:40px;
+  height: 15px;
+  width: 14px;
+  background-color: #fffb25;
+  border-radius: 50%;
+  display: inline-block;
+  filter: blur(4px);
+  animation: fade-inout .5s infinite alternate;
+  z-index: 500;
+}
+
+.dot24{
+  /* https://www.w3schools.com/howto/howto_css_circles.asp */
+  position:absolute;
+  left:1370px;
+  top:56px;
+  height: 12px;
+  width: 12px;
+  background-color: #fffb25;
+  border-radius: 50%;
+  display: inline-block;
+  filter: blur(4px);
+  animation: fade-inout .5s infinite alternate;
+  z-index: 500;
+}
+
+.windswirl{
+  position:absolute;
+  left:1350px;
+  top: 400px;
+/*https://stackoverflow.com/questions/3186688/drop-shadow-for-png-image-in-css*/
+  filter: drop-shadow(5px 5px 10px #0ff); 
+}
+
+.leading{
+  position: absolute;
+  background-color: #FBDDFC;
+/*https://developer.mozilla.org/en-US/docs/Web/CSS/border-radius*/
+  border-radius: 50% 20% / 10% 40%;
+  font-family: "broadsheet",serif; 
+  font-size:24px;
+  color:#00006E;
+  left: 90px;
+  top:-5px;
+  z-index: 550;
+  animation: fade-inout 1s infinite alternate;
+}
+
+.poem1{
+  position: absolute;
+  background-color: #FBDDFC;
+  border-radius: 50% 20% / 10% 40%;
+  text-decoration: dotted underline #00006E;
+  font-family: "broadsheet",serif; 
+  font-size:40px;
+  color:#00006E;
+  left: 460px;
+  top:240px;
+  z-index: 550;
+  margin-top: 0px;
+}
+
+.poem2{
+  position: absolute;
+  background-color: #FBDDFC;
+  border-radius: 50% 20% / 10% 40%;
+  text-decoration: dotted underline #00006E;
+  font-family: "broadsheet",serif; 
+  font-size:28px;
+  color:#00006E;
+  left: 940px;
+  top:360px;
+  z-index: 550;
+  margin-top: 0px;
+}
+
+.nexttime{
+  position: absolute;
+  font-size:40px;
+  color:#00006E;
+  left:1160px;
+  top: 470px;
+}
+
+.wind1{
+  position: absolute;
+  left:160px;
+  top: 70px;
+}
+
+.wind2{
+  position: absolute;
+  left:260px;
+  top: 70px;
+}
+
+.wind3{
+  position: absolute;
+  left:360px;
+  top: 70px;
+}
+
+.wind4{
+  position: absolute;
+  left:460px;
+  top: 70px;
+}
+
+.wind5{
+  position: absolute;
+  left:560px;
+  top: 70px;
+}
+
+.wind6{
+  position: absolute;
+  left:660px;
+  top: 70px;
+}
+
+.wind7{
+  position: absolute;
+  left:760px;
+  top: 70px;
+}
+
+.wind8{
+  position: absolute;
+  left:860px;
+  top: 70px;
+}
+
+.wind9{
+  position: absolute;
+  left:960px;
+  top: 70px;
+}
+
+.wind10{
+  position: absolute;
+  left:1060px;
+  top: 70px;
+}
+
+.wind11{
+  position: absolute;
+  left:1160px;
+  top: 70px;
+}
+
+/* got animation code from this youtube video: https://youtu.be/jD_8FLePHZU */
+@keyframes fade-inout{
+  0%{opacity: 1;}
+  100%{opacity:0;}
+}
+
+
+/* emotion hud */
+
+.sudot{
+  position:absolute;
+  left:1237px;
+  top:40px;
+  height: 22px;
+  width: 77px;
+  background-color: #fffb25;
+  border-radius: 25px;
+  display: inline-block;
+  filter: blur(2px);
+}
+
+.sutalk{
+  position:absolute;
+  left:1240px;
+  top:40px;
+  font-family: questa, serif;
+  font-weight: 500;
+  font-style: italic;
+  font-size: 14pt;
+}
+
+.fedot{
+  position:absolute;
+  left:1237px;
+  top:70px;
+  height: 22px;
+  width: 38px;
+  background-color: #10ff1c;
+  border-radius: 25px;
+  display: inline-block;
+  filter: blur(2px);
+}
+
+.fetalk{
+  position:absolute;
+  left:1240px;
+  top:70px;
+  font-family: questa, serif;
+  font-weight: 500;
+  font-style: italic;
+  font-size: 14pt;
+}
+
+.andot{
+  position:absolute;
+  left:1237px;
+  top:100px;
+  height: 22px;
+  width: 51px;
+  background-color: #ff1e1e;
+  border-radius: 25px;
+  display: inline-block;
+  filter: blur(2px);
+}
+
+.antalk{
+  position:absolute;
+  left:1240px;
+  top:100px;
+  font-family: questa, serif;
+  font-weight: 500;
+  font-style: italic;
+  font-size: 14pt;
+}
+
+.sadot{
+  position:absolute;
+  left:1237px;
+  top:130px;
+  height: 22px;
+  width: 38px;
+  background-color: #74a0ff;
+  border-radius: 25px;
+  display: inline-block;
+  filter: blur(2px);
+}
+
+.satalk{
+  position:absolute;
+  left:1240px;
+  top:130px;  
+  font-family: questa, serif;
+  font-weight: 500;
+  font-style: italic;
+  font-size: 14pt;
+  font-size: 14pt;
+  border-radius: 25px;
+  
+}
+
+.nedot{
+  position:absolute;
+  left:1237px;
+  top:160px;
+  height: 22px;
+  width: 68px;
+  background-color: #ff56da;
+  border-radius: 25px;
+  display: inline-block;
+  filter: blur(2px);
+}
+
+.netalk{
+  position:absolute;
+  left:1240px;
+  top:160px;
+  font-family: questa, serif;
+  font-weight: 500;
+  font-style: italic;
+  font-size: 14pt;
+}
